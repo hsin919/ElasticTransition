@@ -15,7 +15,7 @@ class ElasticTransitionPresentationController:UIPresentationController,UIAdaptiv
     var shadowView = UIView()
     var shadowMaskLayer = ElasticShapeLayer()
 
-    override init(presentedViewController: UIViewController, presentingViewController: UIViewController) {
+    override init(presentedViewController: UIViewController, presentingViewController: UIViewController?) {
         super.init(presentedViewController:presentedViewController, presentingViewController:presentingViewController)
 
         shadowView.layer.addSublayer(shadowMaskLayer)
