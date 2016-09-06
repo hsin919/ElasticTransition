@@ -252,7 +252,7 @@ public class EdgePanTransition: NSObject, UIViewControllerAnimatedTransitioning,
   }
 
   var presentationController:ElasticTransitionPresentationController!
-  public func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+  public func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController?, sourceViewController source: UIViewController) -> UIPresentationController? {
     presentationController = ElasticTransitionPresentationController(presentedViewController: presented, presentingViewController: presenting)
     presentationController.transition = self as? ElasticTransition
     return presentationController
